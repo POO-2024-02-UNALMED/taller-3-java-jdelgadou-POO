@@ -15,7 +15,12 @@ public class TV {
         this.marca = marca;
     }
     public void setCanal(int canal) {
-        this.canal = canal;
+        if (getEstado()==false || canal< 1 || canal>120){
+            
+        }
+        else{
+            this.canal = canal;
+        }
     }
     public void setPrecio(int precio){
         this.precio=precio;
@@ -57,15 +62,15 @@ public class TV {
         return this.estado;
     }
     public void canalUp(){
-        if (this.getEstado() == true && (1<=this.getCanal() && this.getCanal()<120)){
+        if (getEstado() == true && (1<=getCanal() && getCanal()<120)){
             int x;
-            x=this.getCanal();
+            x=getCanal();
             x+=1;
-            this.setCanal(x);
+            setCanal(x);
         }
     }
     public void canalDown(){
-        if (this.getEstado() == true && (1<this.getCanal() && this.getCanal()<=120)){
+        if (this.getEstado() == true && (1<getCanal() && getCanal()<=120)){
             int x;
             x=this.getCanal();
             x-=1;

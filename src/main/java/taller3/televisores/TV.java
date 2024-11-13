@@ -26,7 +26,7 @@ public class TV {
         this.precio=precio;
     }
     public void setVolumen(int volumen) {
-        if (getEstado()==false || volumen< 1 || volumen>7){
+        if (getEstado()==false || volumen< 0 || volumen>7){
             
         }
         else{
@@ -83,7 +83,7 @@ public class TV {
         }
     }
     public void volumenUp(){
-        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<7)){
+        if (this.getEstado() == true && (0<=this.getVolumen() && this.getVolumen()<7)){
             int x;
             x=this.getVolumen();
             x+=1;
@@ -91,7 +91,7 @@ public class TV {
         }
     }
     public void volumenDown(){
-        if (this.getEstado() == true && (1<this.getVolumen() && this.getVolumen()<=7)){
+        if (this.getEstado() == true && (0<this.getVolumen() && this.getVolumen()<=7)){
             int x;
             x=this.getVolumen();
             x-=1;

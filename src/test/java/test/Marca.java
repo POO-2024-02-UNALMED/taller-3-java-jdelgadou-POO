@@ -1,4 +1,4 @@
-package taller3.televisores;
+package test;
 public class Marca {
     private String nombre;
     Marca(String nombre){

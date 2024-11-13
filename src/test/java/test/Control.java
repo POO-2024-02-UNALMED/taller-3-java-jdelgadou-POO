@@ -1,4 +1,4 @@
-package taller3.televisores;
+package test;
 public class Control {
     private TV tv;
     public void turnOn(){
@@ -28,5 +28,11 @@ public class Control {
     public void enlazar(TV Tv){
         this.tv=Tv;
         Tv.setControl(this);
+    }
+    public void setTv(TV nu){
+        this.tv=nu;
+    }
+    public TV getTv() {
+        return tv;
     }
 }

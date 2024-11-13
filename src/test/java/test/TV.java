@@ -1,4 +1,5 @@
-package taller3.televisores;
+package test;
+
 public class TV {
     private Marca marca;
     private int canal=1;

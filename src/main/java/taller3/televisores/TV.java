@@ -83,7 +83,7 @@ public class TV {
         }
     }
     public void volumenUp(){
-        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<120)){
+        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<7)){
             int x;
             x=this.getVolumen();
             x+=1;
@@ -91,7 +91,7 @@ public class TV {
         }
     }
     public void volumenDown(){
-        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<120)){
+        if (this.getEstado() == true && (1<this.getVolumen() && this.getVolumen()<=7)){
             int x;
             x=this.getVolumen();
             x-=1;

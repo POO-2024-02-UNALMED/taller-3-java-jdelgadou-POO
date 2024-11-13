@@ -26,7 +26,12 @@ public class TV {
         this.precio=precio;
     }
     public void setVolumen(int volumen) {
-        this.volumen = volumen;
+        if (getEstado()==false || volumen< 1 || volumen>7){
+            
+        }
+        else{
+            this.volumen = volumen;
+        }
     }
     public void setControl(Control control) {
         this.control = control;

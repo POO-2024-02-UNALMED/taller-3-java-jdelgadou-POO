@@ -1,7 +1,7 @@
-package test;
+package taller3.televisores;
 public class Marca {
     private String nombre;
-    Marca(String nombre){
+    public Marca(String nombre){
         this.nombre=nombre;
     }
     public String getNombre() {

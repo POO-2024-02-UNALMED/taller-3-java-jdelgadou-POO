@@ -1,4 +1,4 @@
-package test;
+package taller3.televisores;
 public class Control {
     private TV tv;
     public void turnOn(){
@@ -29,8 +29,8 @@ public class Control {
         this.tv=Tv;
         Tv.setControl(this);
     }
-    public void setTv(TV nu){
-        this.tv=nu;
+    public void setTv(TV tv){
+        this.tv=tv;
     }
     public TV getTv() {
         return tv;

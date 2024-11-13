@@ -6,7 +6,7 @@ public class TV {
     private boolean estado;
     private int volumen=1;
     private Control control;
-    static int numTV;
+    private static int numTV;
     public TV(Marca marca, boolean estado){
         this.marca=marca;
         this.estado=estado;
@@ -57,7 +57,7 @@ public class TV {
         return this.estado;
     }
     public void canalUp(){
-        if (this.estado ==true && (1<=this.canal && this.canal<120)){
+        if (this.estado == true && (1<=this.canal && this.canal<120)){
             this.canal+=1;
         }
     }

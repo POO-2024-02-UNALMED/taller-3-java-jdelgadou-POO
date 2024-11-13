@@ -57,23 +57,35 @@ public class TV {
         return this.estado;
     }
     public void canalUp(){
-        if (this.estado == true && (1<=this.canal && this.canal<120)){
-            this.canal+=1;
+        if (this.getEstado() == true && (1<=this.getCanal() && this.getCanal()<120)){
+            int x;
+            x=this.getCanal();
+            x+=1;
+            this.setCanal(x);
         }
     }
     public void canalDown(){
-        if (this.estado ==true && (1<this.canal && this.canal<=120)){
-            this.canal-=1;
+        if (this.getEstado() == true && (1<this.getCanal() && this.getCanal()<=120)){
+            int x;
+            x=this.getCanal();
+            x-=1;
+            this.setCanal(x);
         }
     }
     public void volumenUp(){
-        if (this.estado ==true && (1<=this.volumen && this.volumen<7)){
-            this.volumen+=1;
+        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<120)){
+            int x;
+            x=this.getVolumen();
+            x+=1;
+            this.setVolumen(x);
         }
     }
     public void volumenDown(){
-        if (this.estado ==true && (1<this.volumen && this.volumen<=7)){
-            this.volumen-=1;
+        if (this.getEstado() == true && (1<=this.getVolumen() && this.getVolumen()<120)){
+            int x;
+            x=this.getVolumen();
+            x-=1;
+            this.setVolumen(x);
         }
     }
 }
